@@ -1,6 +1,9 @@
 package application;
 
+import java.util.Date;
+
 import model.entities.Department;
+import model.entities.Seller;
 
 public class Program {
 
@@ -8,8 +11,10 @@ public class Program {
 		
 		Department department = new Department(1, "Books");
 		
-		System.out.println(department);
+		Seller seller = new Seller(22, "Bob", "bob@gmail.com", new Date(), 2300.00, department);
 		
+		System.out.println(department);
+		System.out.println(seller);
 	}
 
 }
